@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!--................Css Link...............-->
+    <link rel="stylesheet" href="Main Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!--................Start Nav Bar................-->
+    <nav>
+      <div class="container nav-container">
+        <a href="" class="logo"><h2>Fi<span>reFlame</span>.</h2></a>
+
+        <ul>
+            <li><a href="#About">About me</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact me</a></li>
+        </ul>
+
+        <button class="menubutton"><img src="./images.jpg" alt=""></button>
+      </div>
+    </nav> 
+    <!--................End Nav Bar................--> 
+    
+    <!--................Start Header Section ................-->
+    <header>
+        <div class="header-container container">
+            <div class="header-left">
+                <h1>
+                    Hi, I am <br>
+                    Ridwan Firdaushi D. Usman
+                </h1>
+                <p>
+                    Currently student at USM(University of Southern Mindanao).
+                     Studying the Bachelor of Science in Information System. 
+                    My hobbies are gaming, reading, wachting videos like movies,
+                     anime and comedy, and story telling.
+                </p>
+                <h5>College Student</h5>
+                <div class="header-action-aria">
+                    
+                    <a href="#About" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <img src="./rid.png" alt="Me" height="500">
+            </div>
+        </div>
+    </header>
+    <!--................End Header Section................-->
+
+
+    <!--................Start About Section................-->
+    <section id="About">
+        <h1>About</h1>
+        <div class="container about-container">
+            <p>
+                Hi! Welcome to my Portfolio Website. The purpose of this website is to show what we are capable of
+                and to show our skill and what we do. This project are define our skill and what we learn in this semester.
+
+            </p>
+        </div>
+        <div class="about-content">
+            <article class="about-article">
+                <img src="./name.png" alt="">
+                <h5>Full Name</h5>
+                <small>Ridwan Firdaushi D. Usman</small>
+            </article> 
+            <article class="about-article">
+                <img src="./email.png" alt="">
+                <h5>Email Address</h5>
+                <small>ridwanfirdaushiusman@gmail.com</small>
+            </article> 
+            <article class="about-article">
+                <img src="./Facebook.png" alt="">
+                <h5>Facebook</h5>
+                <small>Ridwan Firdaushi D. Usman</small>
+            </article>
+             <article class="about-article">
+                <img src="./Contact.png" alt="">
+                <h5>Contact</h5>
+                <small>09268634070</small>
+            </article>
+        </div>
+    </section>
+    <!--................End About Section................-->
+    <!--................start services Section................-->
+    <section id="Services">
+         <h1>What I do</h1>
+         <div class="container services-container">
+            <article class="services-article">
+                <img src="./STUDY.png" alt="">
+                <h2>Study</h2>
+            </article>
+             <article class="services-article">
+                <img src="./code.png" alt="">
+                <h2>Coding</h2>
+            </article> 
+            <article class="services-article">
+                <img src="./sport.png" alt="">
+                <h2>Sports</h2>
+            </article>
+         </div>
+    </section>
+    <!--................End services Section................-->
+
+
+    <!--................start contact Section................-->
+    <section id="skills">
+        <div class="container skills-container">
+            <article class="skill-article">
+                <h1>65%</h1>
+                <h4>Studying</h4>
+            </article>
+            <article class="skill-article">
+                <h1>55%</h1>
+                <h4>Athlete</h4>
+            </article>
+            <article class="skill-article">
+                <h1>45%</h1>
+                <h4>HTML & CSS</h4>
+            </article>
+            <article class="skill-article">
+                <h1>35%</h1>
+                <h4>JAVA</h4>
+            </article>
+        </div>
+    </section>
+    <!--................End services Section................-->
+
+
+    <!--................start contac Section................-->
+    <section id="Contact">
+        <h1>Get in touch</h1>
+        <div class="contact-container conatainer">
+            <form name ="submit-to-google-sheet">
+                <div class="form-top">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="text" name="Last name" placeholder="Last name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="number" name="Number" placeholder="Phone number" required>
+                </div>
+                <div class="form-botton">
+                    <textarea name="Message" placeholder="Message"></textarea>
+                    <button type="submit" class="btn-primary">Submit now</button>
+                </div>
+             </form>
+             <span id="msg"></span>
+        </div>
+    </section>
+    <!--................End contact Section................-->
+
+    
+    <!--................End contact Section................-->
+    <footer>
+        &copf;Fire Flame Portfolio
+    </footer>
+    <!--................End contact Section................-->
+
+    <!--................start script................-->
+    <script>
+        let nav = document.querySelector('nav');
+        let navLink = document.querySelector('nav ul');
+        let Menu = document.querySelector('.menubutton');
+
+        window.addEventListener('scroll',()=>{
+            nav.classList.toggle('naWinScroll',window.scrollY>0)
+        });
+
+        Menu.addEventListener('click',()=>{
+            navLink.classList.toggle('ulblock')
+        });
+    </script>
+    <!--................End script................-->
+
+    <!--................start script................-->
+    <script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzvrs7jkPpcG4G4QKWD5mIkqWulOwo5UVoKdGqWy2QTyLmdadApnAA1c2SSwBQspFZg/exec"
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<!--................end script................-->
+</body>
+</html>
